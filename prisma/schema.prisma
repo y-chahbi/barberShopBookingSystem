@@ -1,0 +1,28 @@
+// prisma/schema.prisma
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model User {
+  id           String        @id @default(auto()) @map("_id") @db.ObjectId
+  firstName    String
+  lastName     String
+  email        String        @unique
+  password     String
+  reservations Reservation[] @relation("UserReservations") // This defines the opposite relation
+}
+
+model Reservation {
+  id               String   @id @default(auto()) @map("_id") @db.ObjectId
+  date             DateTime
+  time             String
+  user             User     @relation(fields: [userId], references: [id], name: "UserReservations") // Specify the relation name to match
+  userId           String
+  confirmationSent Boolean  @default(false)
+}
