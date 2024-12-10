@@ -3,6 +3,12 @@ import Image from "next/image";
 import { Provider } from "react-redux";
 import { store } from "../app/store";
 import "./(FrontEnd)/globals.css";
+import Login from "./(FrontEnd)/components/Login";
+import Register from "./(FrontEnd)/components/Register";
+import ForgotPassword from "./(FrontEnd)/components/ForgotPassword";
+import Booking from "./(FrontEnd)/components/Booking";
+import Navbar from "./(FrontEnd)/components/Navbar";
+import Team from "./(FrontEnd)/components/Team";
 
 // function MyApp({ Component, pageProps }: any) {
 //   return (
@@ -16,7 +22,11 @@ import "./(FrontEnd)/globals.css";
 export default function Home() {
   return (
     <Provider store={store}>
-      Hello
+      {/* <Login/>
+      <Register/> */}
+      {/* <Booking/> */}
+      {/* <Navbar/> */}
+      <Team/>
     </Provider>
   );
 }

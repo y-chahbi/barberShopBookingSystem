@@ -11,24 +11,20 @@
   "dependencies": {
     "@prisma/client": "^6.0.1",
     "@reduxjs/toolkit": "^2.4.0",
-<<<<<<< HEAD
+    "axios": "^1.7.9",
     "bcrypt": "^5.1.1",
     "jsonwebtoken": "^9.0.2",
-=======
->>>>>>> f6a93e374d1f6f0ce03ab3c4e9fad01080703621
     "mongodb": "^6.11.0",
     "next": "15.0.4",
     "prisma": "^6.0.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-icons": "^5.4.0",
     "react-redux": "^9.1.2"
   },
   "devDependencies": {
-<<<<<<< HEAD
     "@types/bcrypt": "^5.0.2",
     "@types/jsonwebtoken": "^9.0.7",
-=======
->>>>>>> f6a93e374d1f6f0ce03ab3c4e9fad01080703621
     "@types/node": "^20",
     "@types/react": "^18.3.14",
     "@types/react-dom": "^19",
